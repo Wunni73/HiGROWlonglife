@@ -38,14 +38,13 @@ Button2 useButton(USER_BUTTON);
 WiFiMulti multi;
 //DS18B20 temp18B20(DS18B20_PIN);
 
-#define WIFI_SSID   "xxxxx"
-#define WIFI_PASSWD "xxxxx"
-
+#define WIFI_SSID   "xxxxx"                  //Your own SSID
+#define WIFI_PASSWD "xxxxx"                  //Your own password
 bool bme_found = false;
 
 WiFiClient client;
 const char *host = "api.thingspeak.com";          //IP address of the thingspeak server
-const char *api_key ="xxxxxx";          //Meine US61EK0N2Z8LGR8Z Your own thingspeak api_key
+const char *api_key ="xxxxxx";                    // Your own thingspeak api_key
 const int httpPort = 80;
 long uploadTime = 0;
 void uploadTemperatureHumidity();
